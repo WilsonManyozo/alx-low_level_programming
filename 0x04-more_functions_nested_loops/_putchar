@@ -1,0 +1,15 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+*putchar.writes the character c to stdout
+*%c:The character to print
+*
+*Return: on succes 1.
+*error, -1 is returned, and error0 is returned set appropriatelly
+
+*/
+int_putchar(char c)
+{
+	return(write(1, &c, 1));
+}
