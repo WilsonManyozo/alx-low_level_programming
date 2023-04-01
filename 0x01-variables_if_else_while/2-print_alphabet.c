@@ -1,9 +1,8 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - Prints the alphabetic
- * Retuen: ALways (Success)
+ * Return: Alays (Success)
  */
 
 int main(void)
