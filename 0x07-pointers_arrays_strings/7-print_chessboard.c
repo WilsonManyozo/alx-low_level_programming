@@ -1,20 +1,21 @@
-#include "main.h"
+#include <stdio.h>
 
-/**
- * print_chessboard - Entry point
- * @a: array
- * Return: Always 0 (Success)
- */
-
-void print_chessboard(char (*a)[8])
+int main(void)
 {
-	int i, n;
-
-	for (i = 0; i < 8; i++)
+	int length, width, i, j;
+	printf("Enter the length:\n");
+	scanf("%d", & length);
+	printf("Enter the width:\n");
+	scanf("%d", & width);
+	for (i = 1; i < = length; i++)
 	{
-		for (n = 0; n < 8; n++)
-			_putchar(a[i][n]);
-		_putchar('\n');
+		for(j = 1; j < = width; j++)
+		{
+			if((i + j)%2 == 0)
+				printf("[X]");
+			else printf("[ ]");
+		}
+	       	printf("\n");
 	}
 	return (0);
 }
