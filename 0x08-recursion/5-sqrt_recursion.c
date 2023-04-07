@@ -12,18 +12,6 @@ int _sqrt(int n, int i);
 int _sqrt_recursion(int n)
 {
 	return (_sqrt(n, 1));
-}
-
-/**
- *  _sqrt - calculate natural sqrt
- *  @n: Num to calculate the sqrt
- *  @: Iterate num
- *  Return: The natural sqrt
- */
-
-int _sqrt(int n);
-{
-	int sqrt = i * i;
 
 	if (sqrt > n)
 		return (-1);
