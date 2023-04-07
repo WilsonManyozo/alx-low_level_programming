@@ -9,7 +9,7 @@ int _sqrt(int n, int i);
  * Return: The natural sqrt
  */
 
-int _sqrt_recursion(int n, i)
+int _sqrt_recursion(int n)
 {
 	return (_sqrt(n, 1));
 
@@ -17,7 +17,6 @@ int _sqrt_recursion(int n, i)
 		return (-1);
 
 	if (_sqrt == n)
-		return (i);
 
 	return (_sqrt(n, i + 1));
 }
