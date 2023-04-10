@@ -3,12 +3,11 @@
 #include <stdlib.h>
 
 /**
- * main - A program that multiplies two arg numbers
+ * main - A program that prints multiplication of two arg numbers
  * @argc: Argument count
  * @argv: Argument vector
- * Return: 0 Always
+ * Return: Always zero
  */
-
 int main(int argc, char *argv[])
 {
 	int n1 = 0, n2 = 0;
@@ -19,11 +18,9 @@ int main(int argc, char *argv[])
 		n2 = atoi(argv[2]);
 		printf("%d\n", n1 * n2);
 	}
-
 	else
 	{
 		printf("Error\n");
-
 		return (1);
 	}
 
