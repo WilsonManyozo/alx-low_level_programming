@@ -3,7 +3,7 @@
 
 /**
  * alloc_grid - returns a pointer to a 2 dimensional array of integers.
- * @wildth: grid should be initialized to 0
+ * @width: ...
  * @height: to return height of dimensional
  * Return: NULL  if negative or 0
  */
@@ -33,11 +33,11 @@ int **alloc_grid(int width, int height)
 			{
 				free(a[j]);
 			}
-			free(a);
+			free(a[i]);
 			return (NULL);
 		}
 	}
-	
+
 	for (k = 0; k < height; k++)
 	{
 		for (l = 0; l < width; l++)
@@ -45,6 +45,6 @@ int **alloc_grid(int width, int height)
 			a[k][l] = 0;
 		}
 	}
-	
+
 	return (a);
 }
