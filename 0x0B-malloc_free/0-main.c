@@ -12,10 +12,11 @@
 void simple_print_buffer(char *buffer, unsigned int size)
 {
 	unsigned int i;
+
 	i = 0;
 	while (i < size)
-	
-        if (i % 10)
+	{
+		if (i % 10)
 	{
 		printf(" ");
 	}
@@ -25,10 +26,10 @@ void simple_print_buffer(char *buffer, unsigned int size)
 	}
 	printf("0x%02x", buffer[i]);
 	i++;
-	{
-		printf("\n");
 	}
-	
+		printf("\n");
+}
+
 /**
  * main - check the code for ALX School students.
  *
@@ -37,7 +38,7 @@ void simple_print_buffer(char *buffer, unsigned int size)
 int main(void)
 {
 	char *buffer;
-	
+
 	buffer = create_array(98, 'H');
 	if (buffer == NULL)
 	{
