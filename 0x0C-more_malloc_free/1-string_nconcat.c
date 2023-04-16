@@ -36,7 +36,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (num >= _strlen(s2)) /* account for n too big */
 		num = _strlen(s2);
 
-	len =  malloc(sizeof(*ptr) * len); /* malloc and check for error */
+	len = _strlen(s1) + num + 1; /* +1 to count for null pointer */
+
+	ptr  =  malloc(sizeof(*ptr) * len); /* malloc and check for error */
 	if (ptr == NULL)
 		return (NULL);
 
