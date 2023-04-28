@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+void first(void)_attribut_((constructor));
+
 /**
  * first - prints a sentence before the main
  * function is executed
