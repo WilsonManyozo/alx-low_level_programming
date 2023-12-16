@@ -57,5 +57,5 @@ skiplist_t *create_skiplist(int *array, size_t size)
 		list = node;
 	}
 	init_express(list, save_size);
-	return (list);
+	return (list;
 }
